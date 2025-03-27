@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.folders.FolderActivity">
+
+    <android.support.v7.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <RelativeLayout
+        android:id="@+id/DraggableParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/parent_back_sort_dialog"
+        android:elevation="20dp">
+
+        <TextView
+            android:id="@+id/tvFolderName"
+            fontPath="fonts/Product Sans Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivMenu"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+
+            android:ellipsize="marquee"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical|start"
+            android:marqueeRepeatLimit="marquee_forever"
+
+
+            android:padding="2dp"
+            android:paddingStart="16dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Folder name"
+            android:textAlignment="textStart"
+            android:textColor="?attr/app_textColorPrimary"
+            android:textSize="16sp"
+            app:autoSizeMinTextSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            tools:ignore="MissingPrefix" />
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:elevation="5dp"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="16dp"
+            app:srcCompat="@drawable/vec_menu" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RvPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ivMenu"
+            android:padding="8dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFolders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+</android.support.constraint.ConstraintLayout>

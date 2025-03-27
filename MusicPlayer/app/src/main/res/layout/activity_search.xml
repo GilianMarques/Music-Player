@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/counterFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vec_check"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTracks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="3dp"
+        app:floatingSearch_backgroundColor="?attr/app_card_background"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+        app:floatingSearch_dividerColor="@android:color/transparent"
+        app:floatingSearch_hintTextColor="?attr/app_textColorSecondary"
+        app:floatingSearch_leftActionMode="showHome"
+        app:floatingSearch_searchBarMarginLeft="4dp"
+        app:floatingSearch_searchBarMarginRight="4dp"
+        app:floatingSearch_searchHint="@string/Pesquise_por"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_viewSearchInputTextColor="?attr/app_textColorPrimary"
+        app:floatingSearch_viewSuggestionItemTextColor="?attr/app_textColorPrimary"
+        app:floatingSearch_viewTextColor="?attr/app_textColorPrimary" />
+
+</android.support.constraint.ConstraintLayout>

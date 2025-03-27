@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/transparent_190">
+
+    <TextView
+        android:id="@+id/tvLrc"
+        fontPath="fonts/Product Sans Bold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/Letra_indisponivel_para"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="16sp"
+   />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/fade_foreground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:elevation="5dp"
+        android:foreground="@drawable/lyrics_gradient"
+        android:longClickable="false" />
+
+    <RelativeLayout
+        android:id="@+id/syncMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:longClickable="true"
+        android:visibility="invisible">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/vec_check" />
+
+        <ImageView
+            android:id="@+id/ivUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ivDown"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="false"
+            android:layout_margin="16dp"
+            android:background="@drawable/oval_rectangle"
+            android:elevation="0dp"
+            android:padding="8dp"
+            android:rotation="180"
+            android:src="@drawable/vec_arrow_down"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/ivDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="false"
+            android:layout_margin="16dp"
+            android:background="@drawable/oval_rectangle"
+            android:elevation="0dp"
+            android:padding="8dp"
+            android:src="@drawable/vec_arrow_down"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/ivSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:elevation="7dp"
+        android:padding="16dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/vec_sync_white" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="7dp" />
+
+</RelativeLayout>

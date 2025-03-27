@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="isTablet">false</bool>
+    <integer name="device_type">6</integer>
+
+    <dimen name="sp">1sp</dimen>
+
+    <dimen name="dp">1dp</dimen>
+
+
+    // uso = style="?attr/styleTextPrimary"
+    <attr name="styleTextPrimary" format="reference" />//sem uso
+    <attr name="styleTextSecundary" format="reference" />
+    // sem uso
+
+    <attr name="app_card_background" format="reference" />
+    <attr name="app_playing_now_view_color" format="reference" />
+    <attr name="app_textColorPrimary" format="reference" />
+    <attr name="app_textColorSecondary" format="reference" />
+
+    <!--FadeImageView styles-->
+    <declare-styleable name="fiv">
+        <attr name="blur" format="boolean" />
+        <attr name="radius" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="200"
+    android:exitFadeDuration="200">
+
+
+    <item android:drawable="@drawable/vec_shuffle_accent"  android:state_activated="true" />
+    <item android:drawable="@drawable/vec_shuffle" android:state_activated="false"/>
+
+</selector>

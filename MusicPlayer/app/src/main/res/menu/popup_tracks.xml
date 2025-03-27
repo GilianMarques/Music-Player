@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item
+        android:id="@+id/popup_song_addto_queue"
+        android:icon="@drawable/vec_add_theme"
+        android:title="@string/Adicionar_a_fila" />
+
+    <item
+        android:id="@+id/popup_song_addto_playlist"
+        android:icon="@drawable/vec_add_playlist_theme"
+        android:title="@string/Adicionar_a_playlist" />
+
+    <item
+        android:id="@+id/popup_song_goto_album"
+        android:icon="@drawable/vec_album_theme"
+        android:title="@string/Ver_album" />
+
+    <item
+        android:id="@+id/popup_song_goto_artist"
+        android:icon="@drawable/vec_artist_theme"
+        android:title="@string/Ver_artista" />
+
+    <item
+        android:id="@+id/popup_song_share"
+        android:icon="@drawable/vec_share_theme"
+        android:title="@string/Compartilhar" />
+
+    <item
+        android:id="@+id/popup_song_delete"
+        android:icon="@drawable/vec_delete_theme"
+        android:title="@string/Apagar" />
+
+    <item
+        android:id="@+id/remove_from_playlist"
+        android:icon="@drawable/vec_remove_from_playlist"
+        android:title="@string/Remover_desta_playlist" />
+    <item
+        android:id="@+id/remove_from_queue"
+        android:icon="@drawable/vec_remove_from_playlist"
+        android:title="@string/Remover_desta_lista" />
+
+    <item
+        android:id="@+id/editTag"
+        android:icon="@drawable/vec_edit"
+        android:title="@string/Editar_tags" />
+
+</menu>

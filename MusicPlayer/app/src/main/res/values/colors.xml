@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //tema claro
+    <color name="colorPrimaryLight">#dcd9d9</color>
+    <color name="colorPrimaryDarkLight">#313131</color>
+    <color name="colorAccentLight">#e100a9</color>
+    <color name="text_primary_dark">#ffffff</color>
+    <color name="text_secondary_dark">#b2757575</color>
+    <color name="window_background_light">#F8F8F8</color>
+
+    // tema escuro
+    <color name="colorPrimary_Dark">#16161D</color>
+    <color name="colorPrimaryDark_Dark">#131319</color>
+    <color name="colorAccent_Dark">#b3091e</color>
+    <color name="window_background_dark">#0C0C0F</color>
+    <color name="text_primary_light">#dc000000</color>
+    <color name="text_secondary_light">#89000000</color>
+
+    // outras cores
+    <color name="transparent_100">#64000000</color>
+    <color name="transparent_190">#be000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="card_background_dark">#070708</color>
+    <color name="card_background_light">#FFFFFF</color>
+
+    <color name="playing_now_view_dark">#0B0911</color>
+    <color name="playing_now_view_light">#FFFFFF</color>
+
+
+    <color name="status_navigation_bar_color_light">#DBDBDB</color>
+    <color name="stat_nav_bar_light_sdk23_below">#16161D</color>
+
+    <color name="playing_now_fragment_seconday">#99FFFFFF</color>
+
+
+
+
+
+
+    <color name="white">#ffffff</color>
+    <color name="b_bar_1">#A42BDA</color>
+    <color name="b_bar_2">#19A5BE</color>
+    <color name="b_bar_3">#00897B</color>
+    <color name="b_bar_4">#FF00AA</color>
+</resources>

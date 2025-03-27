@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+
+    <Switch
+        android:id="@+id/swLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="@string/Copiar_para_subpasta"
+        android:textColor="?app_textColorPrimary"
+        android:textColorHint="?attr/app_textColorSecondary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/O_arquivo_ser_salvo_em"
+        android:textAlignment="textStart"
+        android:textColor="?attr/app_textColorPrimary" />
+
+    <TextView
+        android:id="@+id/tvPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rect_background_border"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColor="?attr/app_textColorPrimary" />
+
+    <Switch
+        android:id="@+id/swDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="@string/Deletar_arquivo"
+        android:textColor="?app_textColorPrimary"
+        android:textColorHint="?attr/app_textColorSecondary"
+        android:textSize="16sp" />
+</LinearLayout>

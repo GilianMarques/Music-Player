@@ -1,0 +1,142 @@
+//noinspection GradleCompcatible
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "gilianmarques.dev.musicplayer"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 5
+        // change these variables just after upload apk to playstore
+        versionName "0.5 Beta"
+        // when change versionName change also code template to generate the correct @Since annotation
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        renderscriptTargetApi 27
+        renderscriptSupportModeEnabled true
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            multiDexEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
+
+    implementation 'com.google.firebase:firebase-config:17.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    // exo player
+    //  implementation 'com.google.android.exoplayer:exoplayer:2.7.3'
+    //progress e imageview circular
+    implementation 'me.tankery.lib:circularSeekBar:1.1.4'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    // fontes
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    // blur
+    implementation 'com.wonderkiln:blurkit:1.0.0'
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //Easy SharedPreferences
+    implementation 'com.pixplicity.easyprefs:library:1.9.0'
+
+    //navigationbar
+    implementation 'com.aurelhubert:ahbottomnavigation:2.1.0'
+
+    // media session
+    implementation 'com.android.support:support-v13:28.0.0'
+
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    // runtime permissions for  lazy
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+
+    //bugsnag
+    implementation 'com.bugsnag:bugsnag-android:4.12.0'
+
+    // color pallete
+    implementation 'com.android.support:palette-v7:28.0.0'
+
+    // Side Menu
+    implementation 'com.yarolegovich:sliding-root-nav:1.1.0'
+
+
+    //
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    //lottie
+    implementation 'com.airbnb.android:lottie:2.5.4'
+
+    //fab counter
+    implementation 'com.github.andremion:counterfab:1.0.1'
+
+    //toasty
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+
+    //material dialogs core
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    // same as above but here MovementsCallback got FolderChooserDialog
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+
+    // joda time
+    implementation 'joda-time:joda-time:2.10'
+
+
+    // resizable textView
+    implementation 'me.grantland:autofittextview:0.2.1'
+
+    // too lazy to comment"
+    implementation 'com.github.davidmigloz:number-keyboard:2.0.1'
+
+    //to see database go to   chrome://inspect. on chrome
+    // Stetho core
+    implementation 'com.facebook.stetho:stetho:1.3.1'
+    //Optional network helper
+    implementation 'com.facebook.stetho:stetho-okhttp:1.3.1'
+
+    // picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+
+
+    // paralax on artists rv view
+    implementation 'com.github.abdularis:parallaximageview:1.1'
+
+    // music bar
+    implementation 'com.oze.music:MusicBar:1.0.5'
+
+    //Tag editor
+    implementation 'com.mpatric:mp3agic:0.9.1'
+    //another searchview
+    implementation 'com.github.arimorty:floatingsearchview:2.1.1'
+
+    implementation files('libs/acrcloud-android-sdk-1.5.9.jar')
+
+
+}

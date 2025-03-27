@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_art"
+        android:layout_width="64dp"
+        android:layout_height="0dp"
+        android:padding="12dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vec_playlist_theme" />
+
+    <TextView
+        android:id="@+id/tvName"
+        fontPath="fonts/Product Sans Bold.ttf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:elevation="5dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical|start"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="2dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Legion of monsters"
+        android:textAlignment="textStart"
+        android:textColor="?attr/app_textColorPrimary"
+        android:textSize="16sp"
+        app:autoSizeMinTextSize="16dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_art"
+        app:layout_constraintTop_toTopOf="@+id/iv_art"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/tvTracks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:elevation="5dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical|start"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="2dp"
+        android:scrollHorizontally="true"
+
+        android:singleLine="true"
+        android:text="Disturbed"
+        android:textAlignment="textStart"
+        android:textColor="?attr/app_textColorSecondary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_art"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_art"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fiv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".activities.playing_now.PlayingNowActivity">
+
+    <View
+        android:id="@+id/gradient2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/gradient1"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/marginParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="#4D000000"
+        android:elevation="5dp">
+
+
+        <com.oze.music.musicbar.FixedMusicBar
+
+            android:id="@+id/pBar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:paddingBottom="8dp"
+            app:LoadedBarPrimeColor="?android:attr/colorAccent"
+            app:backgroundBarPrimeColor="@color/playing_now_fragment_seconday"
+            app:layout_constraintBottom_toTopOf="@id/tv_track_title" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@id/pBar"
+            app:layout_constraintEnd_toEndOf="@id/pBar"
+            app:layout_constraintStart_toStartOf="@id/pBar"
+            app:layout_constraintTop_toTopOf="@id/pBar" />
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:elevation="5dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_track_title"
+            fontPath="fonts/Product Sans Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:gravity="bottom|center_horizontal"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_primary_dark"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_track_artist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/tv_track_artist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:text=""
+            android:textAlignment="gravity"
+            android:textColor="@color/playing_now_fragment_seconday"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/btn_play_pause"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_track_timer"
+            fontPath="fonts/Product Sans Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:elevation="5dp"
+            android:text="0:00"
+            android:textColor="@color/playing_now_fragment_seconday"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/pBar"
+            app:layout_constraintStart_toStartOf="@id/pBar"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/tv_track_durr"
+            fontPath="fonts/Product Sans Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:elevation="5dp"
+            android:text="0:00"
+            android:textColor="@color/playing_now_fragment_seconday"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/pBar"
+            app:layout_constraintEnd_toEndOf="@id/pBar"
+            tools:ignore="MissingPrefix" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent_Dark"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_track_durr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lrcParent"
+                android:background="@drawable/p_now_frag_art_lyrics_gradient"
+                android:elevation="5dp">
+
+                <TextView
+                    android:id="@+id/tvLrc"
+                    fontPath="fonts/Product Sans Bold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#00A28B1A"
+                    android:gravity="center"
+                    android:maxLines="9"
+                    android:padding="8dp"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_primary_dark"
+                    android:text="l1\nl2"
+                    android:textSize="20sp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivTranslate"
+                    fiv:autoSizeMaxTextSize="20sp"
+                    fiv:autoSizeMinTextSize="16sp"
+                    tools:ignore="MissingPrefix" />
+
+                <ImageView
+                    android:id="@+id/ivEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toStartOf="@id/ivTranslate"
+                    app:layout_constraintTop_toTopOf="parent"
+                    fiv:srcCompat="@drawable/vec_edit_white" />
+
+                <ImageView
+                    android:id="@+id/ivTranslate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toStartOf="@id/ivOpenActivity"
+                    app:layout_constraintTop_toTopOf="parent"
+                    fiv:srcCompat="@drawable/vec_translate_white" />
+
+                <ImageView
+                    android:id="@+id/ivOpenActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="8dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    fiv:srcCompat="@drawable/vec_open_white" />
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/iv_art"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_art_background" />
+        </android.support.v7.widget.CardView>
+
+        <gilianmarques.dev.musicplayer.customs.PlayPauseView
+            android:id="@+id/btn_play_pause"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="16sp"
+            android:elevation="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_previous"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:background="@color/transparent"
+            android:elevation="7dp"
+            android:padding="0dp"
+            android:src="@drawable/selector_previous"
+            app:layout_constraintBottom_toBottomOf="@id/btn_play_pause"
+            app:layout_constraintEnd_toStartOf="@id/btn_play_pause"
+            app:layout_constraintStart_toEndOf="@id/btn_repeat"
+            app:layout_constraintTop_toTopOf="@id/btn_play_pause" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:background="@color/transparent"
+            android:elevation="7dp"
+            android:padding="0dp"
+            android:src="@drawable/selector_next"
+            app:layout_constraintBottom_toBottomOf="@id/btn_play_pause"
+            app:layout_constraintEnd_toStartOf="@id/btn_shuffle"
+            app:layout_constraintStart_toEndOf="@id/btn_play_pause"
+            app:layout_constraintTop_toTopOf="@id/btn_play_pause" />
+
+        <ImageButton
+            android:id="@+id/btn_repeat"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:background="@color/transparent"
+            android:elevation="7dp"
+            android:padding="0dp"
+            android:src="@drawable/selector_repeat"
+            app:layout_constraintBottom_toBottomOf="@id/btn_play_pause"
+            app:layout_constraintEnd_toStartOf="@id/btn_previous"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_play_pause" />
+
+        <ImageButton
+            android:id="@+id/btn_shuffle"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:background="@color/transparent"
+            android:elevation="7dp"
+            android:padding="0dp"
+            android:src="@drawable/selector_shuffle"
+            app:layout_constraintBottom_toBottomOf="@id/btn_play_pause"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_next"
+            app:layout_constraintTop_toTopOf="@id/btn_play_pause" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

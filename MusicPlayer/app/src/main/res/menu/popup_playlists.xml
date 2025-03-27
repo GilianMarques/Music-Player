@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/add_tracks"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/vec_plus_white"
+        android:title="@string/Adicionar_faixas" />
+
+    <item
+        android:id="@+id/sort"
+        android:icon="@drawable/vec_sort"
+        android:title="@string/Ordenar_por" />
+
+    <item
+        android:id="@+id/remove_playlist"
+        android:title="@string/remover_esta_playlist" />
+    <item
+        android:id="@+id/edit_playlist"
+        android:title="@string/Renomear" />
+
+</menu>

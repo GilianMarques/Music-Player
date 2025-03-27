@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.playing_now.PlayingNowQueue">
+
+
+    <RelativeLayout
+        android:id="@+id/DraggableParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rect_background">
+
+        <ImageView
+            android:id="@+id/ivNewPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="16dp"
+            app:srcCompat="@drawable/vec_add_playlist_theme" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RvPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ivNewPlaylist"
+            android:padding="8dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

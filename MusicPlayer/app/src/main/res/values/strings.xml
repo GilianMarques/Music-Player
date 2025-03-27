@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">MusicPlayer Beta</string>
+
+
+    <string name="com_spotify_sdk_redirect_scheme">gilianmarquesdevmusicplayer</string>
+    <string name="com_spotify_sdk_redirect_host">callback110520191425</string>
+
+
+    <string name="Desconhecido">Desconhecido</string>
+    <string name="Tocando_agora">Tocando agora</string>
+    <string name="faixas">Faixas</string>
+    <string name="albuns">Albuns</string>
+    <string name="artistas">Artistas</string>
+    <string name="titulo_do_canal_denotificacao">Controles do player</string>
+    <string name="Salvando_estado">Salvando estado…</string>
+    <string name="Por_favor_aguarde">Por favor aguarde</string>
+    <string name="Progresso_da_persistencia_do_estado_do_player">Progresso da persistência do estado do player</string>
+    <string name="Atualizando_live_playlists">Progresso da atualização das LivePlaylists</string>
+
+    <string name="Iniciando_serviço">Iniciando serviço…</string>
+
+    <string name="Playlists">Playlists</string>
+    <string name="Pastas">Pastas</string>
+    <string name="Erro_ao_reproduzir_X">Erro ao reproduzir %1$s.</string>
+    <string name="Faixas">%1$d faixas</string>
+    <string name="Adicionar_a_playlist">Adicionar a playlist</string>
+    <string name="Ver_album">Ver album</string>
+    <string name="Ver_artista">Ver artista</string>
+    <string name="selecione_a_playlist">Selecione a Playlist</string>
+    <string name="play_next">Próx. a reproduzir</string>
+    <string name="Adicionar_a_fila">Adicionar a fila</string>
+    <string name="Compartilhar">Compartilhar</string>
+    <string name="Apagar">Apagar</string>
+    <string name="Nome_da_playlist">Nome da playlist</string>
+    <string name="Pesquise_por">Pesquise suas faixas aqui</string>
+    <string name="Exibir_tudo">Exibir tudo</string>
+    <string name="Apenas_musicas">Apenas musicas</string>
+    <string name="Apenas_artistas">Apenas artistas</string>
+    <string name="Apenas_albuns">Apenas albuns</string>
+    <string name="Limpar_selecao">Limpar seleção</string>
+    <string name="Adicionar_faixas">Adicionar faixas</string>
+    <string name="Nova_playlist">Nova playlist</string>
+
+    <string name="Adicionando_faixas">Adicionando faixas</string>
+    <string name="Remover_desta_playlist">Rem. desta playlist</string>
+    <string name="Inserida_na_pos_x">%1$s inserida na posição %2$s</string>
+    <string name="Faixa_ja_esta_na_fila">Faixa já está na fila</string>
+    <string name="Faixa_removida">Faixa removida</string>
+    <string name="Compartilhar_faixa">Compartilhar faixa</string>
+
+    <plurals name="Faixas_adicionadas">
+        <item quantity="one">%1$s Faixa adicionada</item>
+        <item quantity="other">%1$s Faixas adicionadas</item>
+    </plurals>
+
+    <plurals name="Faixas">
+        <item quantity="one">%1$s Faixa</item>
+        <item quantity="other">%1$s Faixas</item>
+    </plurals>
+    <plurals name="faixas">
+        <item quantity="one">%1$s faixa</item>
+        <item quantity="other">%1$s faixas</item>
+    </plurals>
+    <plurals name="Minutos_ate_desligar">
+        <item quantity="one">%1$s minuto até desligar</item>
+        <item quantity="other">%1$s minutos até desligar</item>
+    </plurals>
+    <plurals name="Faixas_ate_desligar">
+        <item quantity="one">%1$s faixas até desligar</item>
+        <item quantity="other">%1$s faixas até desligar</item>
+    </plurals>
+    <plurals name="album">
+        <item quantity="one">%1$s album</item>
+        <item quantity="other">%1$s albuns</item>
+    </plurals>
+
+    <string name="Deseja_remover_essa_Faixa">Deseja mesmo remover essa faixa?</string>
+    <string name="Essa_faixa_sera_removida_do_seu_dispositivo">Essa faixa será permanentemente removida do seu dispositivo.</string>
+    <string name="Remover">Remover</string>
+    <string name="Faixa_removida_com_sucesso">Faixa removida com sucesso</string>
+    <string name="Playlists_nao_podem_ficar">Playlists não podem ficar vazias.</string>
+    <string name="remover_esta_playlist">Remover esta playlist</string>
+    <string name="Voce_nao_pode_remover">Você não pode remover esta playlist</string>
+    <string name="Playlist_removida_com">Playlist removida com sucesso!</string>
+    <string name="Deseja_memo_remover_esta">Deseja mesmo remover esta playlist?</string>
+    <string name="Esta_acao_nao_podera">Essa ação não poderá ser desfeita.</string>
+    <string name="Favoritas">Favoritas</string>
+    <string name="Atualizando_LivePlaylists">Atualizando LivePlaylists</string>
+    <string name="Voce_nao_pode_editar_essa">Você não pode editar essa playlist</string>
+    <string name="Lista_de_reproducao">Lista de reprodução</string>
+    <string name="Letras">Letras</string>
+    <string name="Sincronizar">Sincronizar</string>
+    <string name="Traducao">Tradução</string>
+    <string name="Esta_letra_nao_dispoe">Esta letra não dispoe de uma tradução</string>
+    <string name="Pare_o_sincronismo_antes">Pare o sincronismo antes de alternar</string>
+    <string name="Renomear">Renomear</string>
+    <string name="Renomear_playlist">Renomear playlist</string>
+    <string name="Voce_nap_pode_renomear">Você não pode renomear esta playlist</string>
+    <string name="Carregando_musicas">Carregando músicas</string>
+    <string name="Carregando_albuns">Carregando albuns…</string>
+    <string name="Carregando_info_dos_artistas">Carregando info. dos artistas</string>
+    <string name="Artist_info">%1$s albuns | %2$s faixas</string>
+    <string name="Letra_indisponivel_para">Letra indisponível para essa faixa.</string>
+    <string name="Traducao_indisponivel_para">Tradução indisponível para essa faixa.</string>
+    <string name="Esta_traducao_nao_esta_sincronizada">Esta tradução não está sincronizada, clique no ícone \"tela cheia\" para ver/sincronizar a letra</string>
+    <string name="Esta_letra_nao_esta_sincronizada_clique_no_icone">Esta letra não está sincronizada, clique no ícone \"tela cheia\" para ver/sincronizar a letra</string>
+    <string name="Esta_letra_nao_esta_sincronizada">Esta letra não está sincronizada</string>
+
+    <string name="Remover_desta_lista">Remover desta lista</string>
+    <string name="Faixa_removida_da_fila">Faixa removida da fila</string>
+    <string name="Erro">Erro</string>
+    <string name="Playlist_criada">Playlist criada!</string>
+    <string name="Apagar_pasta">Apagar pasta</string>
+    <string name="Adicionar_a_lista_negra">Adicionar a lista negra</string>
+    <string name="Sera_implementado_em_breve">Será implementado em breve</string>
+    <string name="Deseja_mesmo_remover_esta_pasta">Deseja mesmo remover esta pasta?</string>
+    <string name="Pasta_apagada_com_sucesso">Pasta apagada com sucesso!</string>
+    <string name="O_caminho_recebido">O caminho recebido não leva a nenhum arquivo.</string>
+    <string name="Artistas_recentes">Artistas recentes</string>
+    <string name="Top_10">Top 10 faixas</string>
+    <string name="Atalhos">Atalhos</string>
+    <string name="Seu_artista_favorito">Seu artista Favorito</string>
+    <string name="Seu_album_favorito">Seu album favorito</string>
+    <string name="Sua_playlist_favorita">Sua playlist favorita</string>
+    <string name="Analizando">Analisando...</string>
+    <string name="Reproduzindo_X">Reproduzindo %1$s</string>
+    <string name="Reproduzir">Reproduzir</string>
+    <string name="Biblioteca">Biblioteca</string>
+    <string name="Ultima_tentativa_de_carregar_a_biblioteca_falhou">A última tentativa de carregar a biblioteca falhou. Tentando novamente…</string>
+    <string name="Definir_timer">Definir timer</string>
+    <string name="Configuracoes">Configurações</string>
+    <string name="Desligar_apos_X_minutos">Desligar após %1$s minutos</string>
+    <string name="Desligar_apos_reproduzir_X_musicas">Desligar após reproduzir %1$s musicas</string>
+    <string name="Notificacao_do_servico_de_auto_desligamento">Notificação do serviço de auto-desligamento</string>
+    <string name="Auto_desligamento_iniciado">Auto-desligamento iniciado</string>
+    <string name="Timer_cancelado">Timer cancelado</string>
+    <string name="O_timer_ja_esta_rodando">O timer já está rodando</string>
+    <string name="O_timer_esta_rodando_verifique">O timer está rodando, verifique o progresso na bandeja de notificações</string>
+    <string name="Voce_pode_cancelar_o_timer_expandindo">Você pode cancelar o timer expandindo a notificação na bandeja de notificações</string>
+    <string name="Removendo_pasta">Removendo pasta</string>
+    <string name="Removendo_faixas">Removendo faixas</string>
+    <string name="Atualizando_biblioteca">Atualizando biblioteca</string>
+    <string name="Atualizando_biblioteca_do_app">Atualizando biblioteca interna</string>
+    <string name="Alternar_exibicao">Alternar exibição</string>
+    <string name="Exibir_lista_negra">Lista negra</string>
+    <string name="Pasta_ja_esta_na">Pasta já está na lista negra</string>
+    <string name="Sucesso">Sucesso</string>
+    <string name="Verificando_artistas">Verificando artistas</string>
+    <string name="Deseja_adicionar_pasta_a_lista_negra">Deseja adicionar a pasta a lista negra?</string>
+    <string name="As_faixas_desta_pasta_serao_removidas">As faixas desta pasta serão removidas do app assim como os albuns e artistas correspondentes caso estes não tenham nenhuma música relacionada fora desta pasta. Nada será apagado do armazenamtento do dispositivo. Remova a pasta da lista negra e atualize a biblioteca para rever estas faixas.</string>
+    <string name="void_" />
+    <string name="Opcoes">Opções</string>
+    <string name="disturbed">Disturbed</string>
+    <string name="immortalized">Immortalized</string>
+    <string name="Essa_traducao_nao_esta_sincronizada">Essa tradução não está sincronizada</string>
+    <string name="Letra_indisponivel_para_essa_faixa">Letra indisponível para essa faixa</string>
+
+    <string name="Salvar_letra">Salvar letra</string>
+    <string name="Autorizar">Autorizar</string>
+    <string name="Ordenar_por">Ordenar por</string>
+    <string name="posicao">Posição</string>
+    <string name="Artista">Artista</string>
+    <string name="Album">Album</string>
+    <string name="Titulo">Título</string>
+    <string name="Oque_esta_procurando">O que está procurando?</string>
+    <string name="Nao_e_possivel_adicionar_mais_de_200_musicas">Não é possível adicionar +200 músicas à fila.</string>
+    <string name="Editar_tags">Editar tags</string>
+    <string name="Ano">Ano</string>
+    <string name="Numero">Número</string>
+    <string name="Buscar_na_nuvem">Buscar na nuvem</string>
+    <string name="Titulo_da_faixa_e_nome_do_artista">Título da faixa e nome do artista</string>
+    <string name="Nao_ha_conexao_com_a_internet">Não há conexão com a internet. Habilite dados moveis nas configurações do app ou conecte-se a uma rede WI-FI</string>
+    <string name="Erro_lendo_arquivo">Erro lendo/escrevendo arquivo</string>
+    <string name="Pesquisar">Pesquisar</string>
+    <string name="Renomear_arquivo">Renomear arquivo</string>
+    <string name="Gerenciar_biblioteca">Gerenciar biblioteca</string>
+    <string name="O_arquivo_ser_salvo_em">O arquivo será salvo em:</string>
+    <string name="Copiar_para_subpasta">Copiar para sub-pastas</string>
+    <string name="Deletar_arquivo">Deletar arquivo original</string>
+    <string name="Nova_pasta">Nova pasta</string>
+    <string name="Selecionar">Selecionar</string>
+    <string name="Verifique_os_campos">Verifique os campos</string>
+    <string name="Preencha_o_campo_artista">Preencha ao menos o campo artista</string>
+    <string name="Preencha_o_campo_titulo">Preencha ao menos o campo título</string>
+    <string name="Album_nao_encontrado">Album não encontrado</string>
+    <string name="Artista_nao_encontrado">Artista não encontrado</string>
+    <string name="Erro_carregando_remote_config">Erro carregando rc</string>
+    <string name="Sem_permissao_de_leitura_nao_e_possivel">Sem permissão de leitura não é possível encontrar musicas no seu dispositivo.</string>
+    <string name="Aviso">Aviso</string>
+    <string name="Acesso_ao_spotify">Acesso ao Spotify</string>
+    <string name="Eete_app_usa_os_servcos_do_spotify">Este App usa os serviços do Spotify para obter dados da sua biblioteca local como fotos dos seus artistas, para isso,  precisamos que nos de permissão para acessar a sua conta.</string>
+    <string name="Continuar">Continuar</string>
+    <string name="Preencha_um_campo">Preencha ao menos um campo</string>
+    <string name="As_faixas_serao_salvas_em">As faixas serão salvas em:</string>
+    <string name="Solicitacao_expirou">Solicitação expirou</string>
+    <string name="Insira_a_traducao_opcional">Insira a tradução (opcional)</string>
+    <string name="Insira_a_letra">Insira a letra</string>
+    <string name="Concluir">Concluir</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="FeedBack">Dar meu feedback</string>
+    <string name="Use_este_canal_para">Use este canal para sugerir funcionalidades e relatar bugs, sinta-se livre pra mandar capturas de tela e informações adicionais a respeito do assunto.</string>
+    <string name="Caro_usuario">Caro usuário</string>
+    <string name="Houve_um_erro_ao_carregar">Houve um erro ao carregar o serviço, tente novamente em alguns segundos.</string>
+    <string name="Conectese_a_internet">Conecte-se à internet para usar esse serviço. (veja as configurações de 4G do app) </string>
+
+</resources>
