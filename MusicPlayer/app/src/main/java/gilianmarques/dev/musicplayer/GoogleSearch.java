@@ -32,15 +32,11 @@ public class GoogleSearch {
     }
 
 
-    // AIzaSyAx_RLe0_sO6Cf1PNRg_aKpwLLK5O7tr3Y
-
-
-
     /*public GoogleSearch() {
         Runnable mRunnable = new Runnable() {
             @Override
             public void run() {
-                search("https://www.googleapis.com/customsearch/v1?key=AIzaSyAx_RLe0_sO6Cf1PNRg_aKpwLLK5O7tr3Y&cx=017576662512468239146:omuauf_lfve&q=As i lay dying&searchType=image", new Callback() {
+                search("https://www.googleapis.com/customsearch/v1?key={your_key_here}:omuauf_lfve&q=As i lay dying&searchType=image", new Callback() {
                     @Override public void onFailure(Call call, IOException e) {
                         Log.d(App.myFuckingUniqueTAG + "GoogleSearch", "onFailure: " + e.getMessage());
                     }
