@@ -1,7 +1,3 @@
-Aqui está o texto corrigido:
-
----
-
 # **Music Player**
 
 Por volta de 2018, tive dificuldade em encontrar um player que oferecesse os recursos que eu considerava importantes, que fosse gratuito e sem anúncios (eu odeio anúncios). Então, fiz o meu próprio. Eventualmente, me rendi às comodidades dos players online e engavetei o projeto. Talvez, em algum momento no futuro, eu faça algo baseado nele.
@@ -49,6 +45,3 @@ Por volta de 2018, tive dificuldade em encontrar um player que oferecesse os rec
 <img src="https://github.com/user-attachments/assets/b874cf07-2ede-456d-952b-f32873d1cfce" width="260">
 <img src="https://github.com/user-attachments/assets/e9e4878c-601d-4a5e-a6ce-660b158e4d4d" width="260">
 </p>
-
-
-
